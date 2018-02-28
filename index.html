@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>中国中学生心理健康量表</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<h1>中国中学生心理健康量表</h1>
+				</div>
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
+					<ol class="fs-fields">
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q0">在问卷之前请先填写学号哦~</label>
+							<input class="fs-anim-lower" id="q0" name="q0" type="text" placeholder="学号" required/>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q3">1.我不喜欢参加学校的课外活动</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q3b" name="q3" type="radio" value="1" required="required"/><label for="q3b" class="radio-conversion">无</label></span>
+								<span><input id="q3c" name="q3" type="radio" value="2" required="required"/><label for="q3c" class="radio-social">轻度</label></span>
+								<span><input id="q3a" name="q3" type="radio" value="3" required="required"/><label for="q3a" class="radio-mobile">中度</label></span>
+								<span><input id="q3a" name="q3" type="radio" value="4" required="required"/><label for="q3a" class="pianzhong">偏重</label></span>
+								<span><input id="q3a" name="q3" type="radio" value="5" required="required"/><label for="q3a" class="yanzhong">严重</label></span>
+							</div>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q3">1.我不喜欢参加学校的课外活动</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q3b" name="q3" type="radio" value="1" required="required"/><label for="q3b" class="radio-conversion">无</label></span>
+								<span><input id="q3c" name="q3" type="radio" value="2" required="required"/><label for="q3c" class="radio-social">轻度</label></span>
+								<span><input id="q3a" name="q3" type="radio" value="3" required="required"/><label for="q3a" class="radio-mobile">中度</label></span>
+								<span><input id="q3a" name="q3" type="radio" value="4" required="required"/><label for="q3a" class="pianzhong">偏重</label></span>
+								<span><input id="q3a" name="q3" type="radio" value="5" required="required"/><label for="q3a" class="yanzhong">严重</label></span>
+							</div>
+						</li>
+						<!-- <div id="next"></div> -->
+						<li data-input-trigger id="next"></li>
+					</ol><!-- /fs-fields -->    
+					<button class="fs-submit" type="submit">提交问卷</button>
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+		<script src="js/fullscreenForm.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+						}
+					});
+				} );
+
+				new FForm( formWrap, {
+					onReview : function() {
+						classie.add( document.body, 'overview' ); // for demo purposes only
+					}
+				} );
+			})();
+			(function(){
+			var data = ['2.我心情时好时坏','3.做作业必须反复检查','4.感到人们对我不友好，不喜欢我','5.我感到苦闷','6.我感到紧张或容易紧张','7.我学习劲头时高时低','8.对现在的学校生活感到不适应','9.看不惯现在的社会风气','10.为保证正确，做事必须做得很慢','11.我的想法总与别人不一样','12.总担心自己的衣服是否整齐','13.容易哭泣','14.我感到前途没有希望','15.我感到坐立不安，心神不定','16.经常责怪自己','17.当别人看着我或谈论我时，感到不安','18.感到别人不理解我','19.我常发脾气，想控制但控制不住','20.觉得别人想占我的便宜','21.大叫或摔东西','22.总在想一些不必要的事情','23.必须反复洗手或反复数数','24.我总感到有人在背后谈论','25.时常与人争论、抬杠','26.我觉得对大多数人都不可信任','27.我对做作业的热情忽高忽低','28.同学考试成绩比我高，我感到难过','29.我不适应老师的教学方法','30.老师对我不公平','31.我感到学习负担很重','32.我对同学忽冷忽热','33.上课时，总担心老师提问自己','34.我无缘无故地突然感到害怕','35.我对老师时而亲近时而疏远','36.一听说要考试，心里就感到好紧张','37.别的同学穿戴比我好，有钱，我感到不舒服','38.我讨厌做作业','39.家里环境干扰我学习','40.我讨厌上学','41.不喜欢班里的风气','42.父母对我不公','43.感到心里烦躁','44.我常常无精打采，提不起劲来','45.我感情容易受到别人的伤害','46.觉得心里不塌实','47.别人对我的表现评价不恰','48.明知担心没有用，但总害怕考不好','49.总觉得别人在跟我作对','50.我容易激动和烦恼','51.同异性在一起时，感到害羞不自在','52.有想伤害他人或打人的冲动','53.我对父母时而亲热，时而冷淡','54.我对比我强的同学并不服气','55.我讨厌考试','56.心里总觉得有事','57.经常有自杀的念头','58.有想摔东西的冲动','59.要求别人十全十美','60.同学考试成绩比我高，但能力并不比我强'];
+			var element = document.getElementById("next");
+			var html = '';
+			data.forEach(function (argument) {
+				html += '<li data-input-trigger><label class="fs-field-label fs-anim-upper" for="q3">' + argument + '</label><div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower"><span><input id="q3b" name="q3" type="radio" value="1" required="required"/><label for="q3b" class="radio-conversion">无</label></span><span><input id="q3c" name="q3" type="radio" value="2" required="required"/><label for="q3c" class="radio-social">轻度</label></span><span><input id="q3a" name="q3" type="radio" value="3" required="required"/><label for="q3a" class="radio-mobile">中度</label></span><span><input id="q3a" name="q3" type="radio" value="4" required="required"/><label for="q3a" class="pianzhong">偏重</label></span><span><input id="q3a" name="q3" type="radio" value="5" required="required"/><label for="q3a" class="yanzhong">严重</label></span></div></li>';
+			});
+			element.innerHTML = html;
+		    })();
+		</script>
+	</body>
+</html>
