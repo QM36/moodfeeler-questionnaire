@@ -633,10 +633,10 @@ button.fs-continue,
 button.fs-submit,
 button.fs-continue {
 	padding: 0.6em 1.5em;
-	border: 3px solid #232529;
+	border: 3px solid #fff;
 	border-radius: 40px;
 	font-weight: 700;
-	color: rgba(0,0,0,0.4);
+	color: #fff;
 }
 
 .fs-form-overview .fs-submit,
@@ -654,15 +654,15 @@ button.fs-continue {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	margin: 0 40px 60px 0;
+	margin: 0 3em 2.5em 0;
 	font-size: 1.25em;
 }
 
 button.fs-submit:hover,
 button.fs-submit:focus,
 button.fs-continue:hover {
-	background: #232529;
-	color: #fff;
+	background: #ffffff;
+	color: #000000;
 }
 
 .fs-continue::after {
