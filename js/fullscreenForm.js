@@ -286,7 +286,7 @@
 
 				if( self.isLastStep ) {
 					// show the complete form and hide the controls
-					self._hideCtrl( self.ctrlNav );
+					// self._hideCtrl( self.ctrlNav );
 					self._hideCtrl( self.ctrlProgress );
 					self._hideCtrl( self.ctrlContinue );
 					self._hideCtrl( self.ctrlFldStatus );
@@ -308,7 +308,10 @@
 				}
 				self.isAnimating = false;
 			};
-
+		console.log("this.isLastStep:" + this.isLastStep);
+		console.log("this.backto:" + this.backto);
+		console.log("this.current:" + this.current);
+		console.log("this.fieldsCount:" + this.fieldsCount);
 		if( support.animations ) {
 			if( this.navdir === 'next' ) {
 				if( this.isLastStep ) {
