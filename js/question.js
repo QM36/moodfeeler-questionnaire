@@ -15,9 +15,11 @@
     html += `<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" for="q3" data-info="本题无特殊说明">${argument}</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q3b" name="q3" type="radio" value="conversion"/><label for="q3b" class="radio-conversion">Sell things</label></span>
-								<span><input id="q3c" name="q3" type="radio" value="social"/><label for="q3c" class="radio-social">Become famous</label></span>
-								<span><input id="q3a" name="q3" type="radio" value="mobile"/><label for="q3a" class="radio-mobile">Mobile market</label></span>
+								<span><input id="q3a" name="q3" type="radio" value="1"/><label for="q3a" class="wu">无</label></span>
+								<span><input id="q3b" name="q3" type="radio" value="2"/><label for="q3b" class="qingdu">轻度</label></span>
+                <span><input id="q3c" name="q3" type="radio" value="3"/><label for="q3c" class="zhongdu">中度</label></span>
+                <span><input id="q3d" name="q3" type="radio" value="4"/><label for="q3d" class="pianzhong">较重</label></span>
+                <span><input id="q3e" name="q3" type="radio" value="5"/><label for="q3e" class="yanzhong">严重</label></span>
 							</div>
 						</li>`;
   });

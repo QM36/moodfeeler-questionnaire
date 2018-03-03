@@ -342,15 +342,15 @@ button.fs-continue,
 	transform: translate(-50%,-50%);
 }
 
-.fs-fields .fs-radio-custom label.radio-mobile::after {
+.fs-fields .fs-radio-custom label.zhongdu::after {
 	background-image: url(../img/zhongdu.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-social::after {
+.fs-fields .fs-radio-custom label.qingdu::after {
 	background-image: url(../img/qingdu.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-conversion::after {
+.fs-fields .fs-radio-custom label.wu::after {
 	background-image: url(../img/wu.svg);
 }
 
@@ -821,7 +821,7 @@ input[type=text]::-ms-clear {
 		left: 0;
 		padding: 0 1.5em 0 1em;
 		width: auto;
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 
 	.fs-form.fs-form-overview {
