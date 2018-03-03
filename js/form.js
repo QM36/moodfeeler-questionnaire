@@ -5,7 +5,7 @@ $(document).ready(function() {
     beforeSubmit: showRequest,
     success: showResponse,
     url: "https://moodfeeler.com/api/v2/form/MSSMHS/",
-    type: POST,
+    type: "POST",
     dataType: JSON,
     clearForm: true,
     reserForm: true,
@@ -14,6 +14,7 @@ $(document).ready(function() {
 
   function showRequest(formData, jqForm, options) {
     var queryString = $.param(formData);
+    console.log(queryString);
     return true;
   }
 
