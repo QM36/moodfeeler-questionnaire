@@ -115,9 +115,9 @@
 		this.ctrls = createElement( 'div', { cName : 'fs-controls', appendTo : this.el } );
 
 		// continue button (jump to next field)
-		this.ctrlContinue = createElement( 'button', { cName : 'fs-continue', inner : 'Continue', appendTo : this.ctrls } );
+		this.ctrlContinue = createElement( 'button', { cName : 'fs-continue', inner : '下一题', appendTo : this.ctrls } );
 		this._showCtrl( this.ctrlContinue );
-
+		
 		// navigation dots
 		if( this.options.ctrlNavDots ) {
 			this.ctrlNav = createElement( 'nav', { cName : 'fs-nav-dots', appendTo : this.ctrls } );
@@ -126,7 +126,7 @@
 				dots += i === this.current ? '<button class="fs-dot-current"></button>' : '<button disabled></button>';
 			}
 			this.ctrlNav.innerHTML = dots;
-			this._showCtrl( this.ctrlNav );
+			// this._showCtrl( this.ctrlNav );
 			this.ctrlNavDots = [].slice.call( this.ctrlNav.children );
 		}
 
