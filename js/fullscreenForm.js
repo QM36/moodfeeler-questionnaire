@@ -66,7 +66,7 @@
 		// show progress bar
 		ctrlProgress : true,
 		// show navigation dots
-		ctrlNavDots : true,
+		ctrlNavDots : false,
 		// show [current field]/[total fields] status
 		ctrlNavPosition : true,
 		// reached the review and submit step
@@ -126,7 +126,7 @@
 				dots += i === this.current ? '<button class="fs-dot-current"></button>' : '<button disabled></button>';
 			}
 			this.ctrlNav.innerHTML = dots;
-			// this._showCtrl( this.ctrlNav );
+			this._showCtrl( this.ctrlNav );
 			this.ctrlNavDots = [].slice.call( this.ctrlNav.children );
 		}
 
