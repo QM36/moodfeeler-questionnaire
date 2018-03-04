@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   function showRequest(formData, jqForm, options) {
     console.log(formData);
-    var queryString = $.param(formData);
+    var queryString = JSON.parse('{"' + decodeURI($.param(formData).replace(/&/g, "\",\"").replace(/=/g, "\":\"")) + '"}');
     console.log(queryString);
     return true;
   }
