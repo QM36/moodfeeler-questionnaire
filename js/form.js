@@ -13,6 +13,7 @@ $(document).ready(function() {
   };
 
   function showRequest(formData, jqForm, options) {
+    console.log(formData);
     var queryString = $.param(formData);
     console.log(queryString);
     return true;
