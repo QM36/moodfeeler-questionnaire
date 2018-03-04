@@ -6,7 +6,7 @@ $(document).ready(function() {
     success: showResponse,
     url: "https://moodfeeler.com/api/v2/form/MSSMHS/",
     type: "POST",
-    dataType: JSON,
+    dataType: "JSON",
     clearForm: true,
     reserForm: true,
     timeout: 3000
