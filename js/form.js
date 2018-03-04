@@ -4,7 +4,7 @@ $(document).ready(function() {
     target: '#output1',
     beforeSubmit: showRequest,
     success: showResponse,
-    url: "https://moodfeeler.com/api/v2/form/MSSMHS/",
+    url: "https://api.moodfeeler.com/form/MSSMHS/",
     type: "POST",
     dataType: "JSON",
     clearForm: true,
