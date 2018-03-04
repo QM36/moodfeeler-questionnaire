@@ -343,23 +343,23 @@ button.fs-continue,
 }
 
 .fs-fields .fs-radio-custom label.zhongdu::after {
-	background-image: url(../img/zhongdu.svg);
+	background-image: url(http://ov1h2uvae.bkt.clouddn.com/zhongdu.svg);
 }
 
 .fs-fields .fs-radio-custom label.qingdu::after {
-	background-image: url(../img/qingdu.svg);
+	background-image: url(http://ov1h2uvae.bkt.clouddn.com/qingdu.svg);
 }
 
 .fs-fields .fs-radio-custom label.wu::after {
-	background-image: url(../img/wu.svg);
+	background-image: url(http://ov1h2uvae.bkt.clouddn.com/wu.svg);
 }
 
 .fs-fields .fs-radio-custom label.pianzhong::after {
-	background-image: url(../img/pianzhong.svg);
+	background-image: url(http://ov1h2uvae.bkt.clouddn.com/pianzhong.svg);
 }
 
 .fs-fields .fs-radio-custom label.yanzhong::after {
-	background-image: url(../img/yanzhong.svg);
+	background-image: url(http://ov1h2uvae.bkt.clouddn.com/yanzhong.svg);
 }
 
 .fs-fields .fs-radio-custom label:hover::after,
