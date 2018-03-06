@@ -247,7 +247,7 @@ button.fs-continue,
 	color: #fffed8;
 	text-overflow: ellipsis;
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	border-radius: 0;
 }
 
@@ -821,7 +821,7 @@ input[type=text]::-ms-clear {
 		left: 0;
 		padding: 0 1.5em 0 1em;
 		width: auto;
-		font-size: 1.8em;
+		font-size: 1.5em;
 	}
 
 	.fs-form.fs-form-overview {
