@@ -13,8 +13,7 @@ $(document).ready(function() {
   };
 
   function showRequest(formData, jqForm, options) {
-    console.log(formData);
-    var queryString = JSON.parse('{"' + decodeURI($.param(formData).replace(/&/g, "\",\"").replace(/=/g, "\":\"")) + '"}');
+    var queryString = $.param(formData);
     console.log(queryString);
     return true;
   }
