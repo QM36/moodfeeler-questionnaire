@@ -8,11 +8,11 @@
     html += `<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" data-info="本题无特殊说明">${argument}</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q${index}a" name="q${index}" type="radio" value="1"/><label for="q${index}a" class="wu">无</label></span>
-								<span><input id="q${index}b" name="q${index}" type="radio" value="2"/><label for="q${index}b" class="qingdu">轻度</label></span>
-                <span><input id="q${index}c" name="q${index}" type="radio" value="3"/><label for="q${index}c" class="zhongdu">中度</label></span>
-                <span><input id="q${index}d" name="q${index}" type="radio" value="4"/><label for="q${index}d" class="pianzhong">较重</label></span>
-                <span><input id="q${index}e" name="q${index}" type="radio" value="5"/><label for="q${index}e" class="yanzhong">严重</label></span>
+								<span><input id="q${index + 1}a" name="q${index + 1}" type="radio" value="1"/><label for="q${index + 1}a" class="wu">无</label></span>
+								<span><input id="q${index + 1}b" name="q${index + 1}" type="radio" value="2"/><label for="q${index + 1}b" class="qingdu">轻度</label></span>
+                <span><input id="q${index + 1}c" name="q${index + 1}" type="radio" value="3"/><label for="q${index + 1}c" class="zhongdu">中度</label></span>
+                <span><input id="q${index + 1}d" name="q${index + 1}" type="radio" value="4"/><label for="q${index + 1}d" class="pianzhong">较重</label></span>
+                <span><input id="q${index + 1}e" name="q${index + 1}" type="radio" value="5"/><label for="q${index + 1}e" class="yanzhong">严重</label></span>
 							</div>
 						</li>`;
   });
