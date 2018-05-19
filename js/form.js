@@ -4,7 +4,7 @@ $(document).ready(function() {
     target: '#output1',
     beforeSubmit: showRequest,
     success: showResponse,
-    url: "https://api.moodfeeler.com/v2/form/MSSMHS/",
+    url: "https://api.moodfeeler.com/v3/form/MSSMHS/",
     type: "POST",
     dataType: "JSON",
     clearForm: true,
@@ -14,13 +14,10 @@ $(document).ready(function() {
 
   function showRequest(formData, jqForm, options) {
     var queryString = $.param(formData);
-    console.log(queryString);
     return true;
   }
 
   function showResponse(responseText, statusText, xhr, $form) {
-    console.log(responseText);
-    console.log(statusText);
     if (statusText == "success") {
       alert("提交成功！");
     } else if (statusText == "error") {

@@ -4,7 +4,6 @@
   var element = $('#first');
   var html = '';
   data.forEach(function (argument, index) {
-    console.log(index);
     html += `<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" data-info="本题无特殊说明">${argument}</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
