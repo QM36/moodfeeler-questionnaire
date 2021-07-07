@@ -18,7 +18,7 @@ html, body, .container {
 }
 
 body {
-	background: #00A1F1;
+	background: #fff;
 	color: #fff;
 	font-weight: 400;
 	font-size: 1em;
@@ -59,7 +59,6 @@ a:hover, a:focus {
 	font-variant: normal;
 	font-family: 'codropsicons';
 	line-height: 1;
-	speak: none;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -85,7 +84,7 @@ a:hover, a:focus {
 
 .codrops-icon:hover span {
 	display: block;
-	color: #6a7b7e;
+	color: #888888;
 }
 
 /* Related demos */

@@ -4,7 +4,7 @@ $(document).ready(function() {
     target: '#output1',
     beforeSubmit: showRequest,
     success: showResponse,
-    url: "https://moodfeeler.com/api/v2/form/MSSMHS/",
+    url: "https://api.moodfeeler.com/v3/form/MSSMHS/",
     type: "POST",
     dataType: "JSON",
     clearForm: true,
@@ -13,14 +13,21 @@ $(document).ready(function() {
   };
 
   function showRequest(formData, jqForm, options) {
-    console.log(formData);
     var queryString = $.param(formData);
-    console.log(queryString);
     return true;
   }
 
   function showResponse(responseText, statusText, xhr, $form) {
+    if (statusText == "success") {
+      alert("提交成功！");
+    } else if (statusText == "error") {
+      alert("出了点问题...");
+    } else {
+      alert("请检查网络是否正常");
+    }  
+/*
     if(statusText == "success") {
+      alert('success'); 
       swal(
         '漂亮！',
         '你完美地完成了这份量表！',
@@ -39,6 +46,7 @@ $(document).ready(function() {
         'question'
       )
     }
+  */
   }
   $('#myform').ajaxForm(options);
   
